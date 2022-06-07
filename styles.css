@@ -1,0 +1,20 @@
+  <style>
+        body {
+            background-color: azure;
+        }
+
+        hr {
+            width: 40%;
+            border-style: dotted none none none;
+            border-width: 5px;
+            border-color: rgb(96, 149, 173);
+
+        }
+        h1 {
+            
+            color: red;
+            font-size: large;
+        }
+
+        
+    </style>
