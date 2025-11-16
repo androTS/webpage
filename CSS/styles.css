@@ -7,6 +7,21 @@
   
 }
 
+.fa-envelope
+
+{
+  font-size: 40px;
+  color: #60548a;
+  margin-left: 10px;
+}
+
+.fa-fade
+{
+  font-size: 24px;
+  color: #60548a;
+  margin-left: 10px;
+}
+
 .velikostSlikic {
   width: 480px;
   height: 400px;
