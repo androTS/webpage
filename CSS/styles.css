@@ -1,0 +1,128 @@
+.osnovniText {
+  text-align: center;
+  color: #1ec778;
+  font-family: 'Arial', sans-serif;
+  margin-top: 2rem;
+  text-decoration: dotted;
+  
+}
+
+.velikostSlikic {
+  width: 480px;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+.paragraf {
+  max-width: 600px;
+  margin: 1rem auto;
+  font-size: 5.1rem;
+  line-height: 1.6;
+  color: #110101;
+  font-family: fantasy;
+  text-align: justify;
+  align-items: center;
+}
+
+/* === Layout za sliko levo in blog desno === */
+#blog {
+  display: flex;
+  flex-wrap: wrap; /* omogoča, da se na manjših zaslonih elementi zložijo */
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Flip kartica – že imaš .card-container in .card! */
+
+
+
+  .card-container {
+    width: 30%;
+    height: 70%;
+    perspective: 1000; /* enables 3D effect */
+  }
+
+  .card {
+    background: #F1F0E8;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1.0s ease;
+  }
+
+  .card-container:hover .card {
+    transform: rotateY(180deg);
+  }
+  
+  .card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+    padding: 60px;
+  }
+
+  .card-front {
+    background: url('/slike/andrej_srajca_brez_ozadja.png') center/cover no-repeat;
+    
+  }
+
+  .card-front::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: none
+    
+  }
+
+  .card-front h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 1.8rem;
+  }
+
+  .card-back {
+    background: none;
+    color: #554d12;
+    transform: rotateY(180deg);
+    text-align: center;
+  }
+
+  .card-back p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+/* Blog vsebina */
+.blog-content {
+  flex: 2;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+/* Dodaj glavo bloga */
+.blog-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Datum objave */
+.blog-content .datum {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}

@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My JS Blog</title>
-   <link rel="stylesheet" href="styles.css">
+  <meta name="author" content="Andrej Zelenik">
+  <title>Andrej's site</title>
+  <link rel="stylesheet" href="/CSS/styles.css">
+  <script src="/JS/script.js"></script>
 </head>
+
 <body>
+ 
+ <a href="./elektroinstalacije.html">Hobiji</a>
+ <h1>lores ipsum</h1>
+ <p class="paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+ <p>Lorem ipsum first sit amet, consectetur adipiscing elit.</p>
+ <p>Lorem ipsum second sit amet, consectetur adipiscing elit.</p>
+ <hr />
+ <br />
 
-<header>
-  <h1>My JavaScript Blog</h1>
-  <p>Simple static blog powered by JS</p>
-</header>
+ <main id="blog">
+  <div class="card-container">
+    <div class="card">
+      <div class="card-face card-front"></div>
+      <div class="card-face card-back">
+        <h1 class="osnoviText">Me in person!</h1>
+        <p class="paragraf">Tukaj nekaj napisano isl ut nunc tincidunt tincidunt.</p>
+      </div>
+    </div>
+  </div>
 
-<main id="blog"></main>
+  <div class="blog-content">
+  
+  </div>
+  <br />
+</main> 
 
-<footer>
-  &copy; 2025 My Blog | Hosted on Ubuntu
-</footer>
-
-<script>
-  // Blog posts stored as JavaScript objects
-  const posts = [
-    {
-      title: "🚀 Welcome to My Blog",
-      date: "May 15, 2025",
-      content: "This is my first post on my new JavaScript-powered blog! It's fully static, hosted on an Ubuntu web server. No backend needed!"
-    },
-    {
-      title: "🔐 Setting up OpenVPN",
-      date: "May 14, 2025",
-      content: "Today I configured OpenVPN on my pfSense router and made it accessible via router.drejcl.eu. I also set up port forwarding and DNS A records."
-    },
-    {
-      title: "🌍 Connecting Domains",
-      date: "May 13, 2025",
-      content: "I learned how to point subdomains like router.drejcl.eu to my IP and assign services via ports. Super useful for managing services cleanly."
-    }
-  ];
-
-  const blog = document.getElementById("blog");
-
-  posts.forEach(post => {
-    const el = document.createElement("div");
-    el.className = "post";
-    el.innerHTML = `
-      <h2>${post.title}</h2>
-      <div class="date">${post.date}</div>
-      <p>${post.content}</p>
-    `;
-    blog.appendChild(el);
-  });
-</script>
 
 </body>
+<br />  
+<hr />
+
+  
+  
+  <footer>
+    <p>© copyright Andrej Zelenik</p>
+    <p>azelenikatgmaildotcom</p>
+  </footer>
+  
+  <!-- <script src="/JS/script.js"></script> -->
+
+ <!-- <a href="./elektroinstalacije.html">Hobiji</a> -->
+
+
 </html>
