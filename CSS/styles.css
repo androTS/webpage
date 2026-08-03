@@ -122,14 +122,7 @@ body > a {
 }
 
 
-@media (hover: hover) {
 
-  .card-container:hover .card {
-    transform: rotateY(180deg);
-  }
-
-
-}
   
   .card-face {
     position: absolute;
@@ -229,6 +222,15 @@ footer {
   text-align: center;
 }
 
+
+@media (hover: hover) {
+
+  .card-container:hover .card {
+    transform: rotateY(180deg);
+  }
+
+
+}
 
 /* ===========================
    Mobilni prikaz
