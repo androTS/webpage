@@ -120,6 +120,10 @@ body > a {
   .card-container:hover .card {
     transform: rotateY(180deg);
   }
+
+  .card.flipped {
+  transform: rotateY(180deg);
+}
   
   .card-face {
     position: absolute;
