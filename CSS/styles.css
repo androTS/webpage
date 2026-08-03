@@ -29,6 +29,12 @@ body > a {
   margin-left: 10px;
 }
 
+.picikl-slika {
+  width: 420px;
+  max-width: 100%;
+  height: auto;
+}
+
 .velikostSlikic {
   width: 350px;
   height: 290px;
@@ -211,4 +217,92 @@ footer {
   margin-top: 100px;
   padding: 40px 0;
   text-align: center;
+}
+
+
+/* ===========================
+   Mobilni prikaz
+   =========================== */
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #blog {
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  /* Flip kartica */
+  .card-wrapper,
+  .card-container {
+    width: 90vw;
+    max-width: 350px;
+  }
+
+  .card-container {
+    height: 450px;
+  }
+
+
+  /* Navadne slike */
+  .velikostSlikic,
+  .it-slike {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 350 / 290;
+    object-fit: cover;
+  }
+
+
+  /* Elektro omare hover slike */
+  .hover-container {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 350 / 290;
+    margin: 10px auto;
+  }
+
+  .hover-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  /* Video */
+  .video,
+  video {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+  }
+
+
+  /* Naslovi */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+
+  /* Odstavki */
+  .paragraf {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+
+  /* Footer */
+  footer {
+    margin-top: 50px;
+    padding: 20px;
+  }
 }
