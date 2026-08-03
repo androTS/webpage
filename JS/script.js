@@ -14,8 +14,9 @@ if (dateEl) {
 	dateEl.textContent = formattedDate;
 }
 
-document.querySelectorAll('.card-container').forEach(cardContainer => {
-  cardContainer.addEventListener('click', () => {
-    cardContainer.querySelector('.card').classList.toggle('flipped');
-  });
+document.querySelectorAll('.card-container').forEach(container => {
+    container.addEventListener('click', () => {
+        const card = container.querySelector('.card');
+        card.classList.toggle('flipped');
+    });
 });
