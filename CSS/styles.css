@@ -322,6 +322,14 @@ footer {
   border-radius: 12px;
 }
 
+@media (hover: hover) {
+
+  .card-container:hover .card {
+    transform: rotateY(180deg);
+  }
+
+}
+
   /* Footer */
   footer {
     margin-top: 50px;
